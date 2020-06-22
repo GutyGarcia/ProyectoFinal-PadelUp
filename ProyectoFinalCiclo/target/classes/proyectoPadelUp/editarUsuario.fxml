@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="editarUsuario" prefHeight="448.0" prefWidth="392.0" styleClass="fondo" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectoPadelUp.controladores.ControladorDatosPerfil">
+  <children>
+   	<Text fx:id="error" fill="RED" layoutX="-5.0" layoutY="376.0" textAlignment="CENTER" wrappingWidth="403.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+      <Label layoutX="13.0" layoutY="38.0" text="Nombre" />
+      <TextField fx:id="textFieldNombre" layoutX="165.0" layoutY="33.0">
+         <tooltip>
+            <Tooltip text="campo obligatorio" />
+         </tooltip>
+      </TextField>
+      <Label layoutX="11.0" layoutY="87.0" text="Primer apellido" />
+      <TextField fx:id="textFieldApellido1" layoutX="165.0" layoutY="82.0">
+         <tooltip>
+            <Tooltip text="campo obligatorio" />
+         </tooltip>
+      </TextField>
+      <Label layoutX="12.0" layoutY="232.0" text="Nombre usuario" />
+      <TextField fx:id="textFieldEmail" layoutX="165.0" layoutY="130.0">
+      	<tooltip>
+            <Tooltip text="Campo no editable" />
+         </tooltip>
+      </TextField>
+      <Label layoutX="11.0" layoutY="135.0" text="Email" />
+      <PasswordField fx:id="contraseñaEmail" layoutX="165.0" layoutY="178.0">
+         <tooltip>
+            <Tooltip text="campo obligatorio" />
+         </tooltip>
+      </PasswordField>
+      <Label layoutX="11.0" layoutY="280.0" text="Contraseña usuario" />
+      <TextField fx:id="textFieldNombreUsuario" editable="false" layoutX="165.0" layoutY="227.0">
+         <tooltip>
+            <Tooltip text="campo obligatorio" />
+         </tooltip>
+      </TextField>
+      <Label layoutX="47.0" layoutY="126.0" text="*" textFill="#db1212">
+         <padding>
+            <Insets left="2.0" top="-2.0" />
+         </padding></Label>
+      <Label layoutX="66.0" layoutY="37.0" text="*" textFill="#db1212">
+         <padding>
+            <Insets left="2.0" top="-2.0" />
+         </padding></Label>
+      <Label layoutX="110.0" layoutY="84.0" text="*" textFill="#db1212">
+         <padding>
+            <Insets left="2.0" top="-2.0" />
+         </padding></Label>
+      <Label layoutX="121.0" layoutY="222.0" text="*" textFill="#db1212" />
+      <Button fx:id="botonAceptar" layoutX="133.0" layoutY="387.0" mnemonicParsing="false" onAction="#botonAceptar" prefHeight="39.0" prefWidth="65.0" styleClass="fondo3">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/aceptar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <tooltip>
+            <Tooltip text="Aceptar" />
+         </tooltip>
+      </Button>
+      <Button fx:id="botonCancelar" layoutX="204.0" layoutY="387.0" mnemonicParsing="false" onAction="#botonCancelar" prefHeight="39.0" prefWidth="65.0" styleClass="fondo3" AnchorPane.rightAnchor="129.0">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/cancelar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Cancelar" />
+         </tooltip>
+      </Button>
+      <Label layoutX="13.0" layoutY="328.0" text="Repetir contraseña" />
+      <PasswordField fx:id="contraseña" layoutX="165.0" layoutY="275.0">
+         <tooltip>
+            <Tooltip text="campo obligatorio" />
+         </tooltip>
+      </PasswordField>
+      <Label layoutX="124.0" layoutY="174.0" text="*" textFill="#db1212">
+         <padding>
+            <Insets left="2.0" top="-2.0" />
+         </padding>
+      </Label>
+      <Label layoutX="135.0" layoutY="271.0" text="*" textFill="#db1212">
+         <padding>
+            <Insets left="2.0" top="-2.0" />
+         </padding>
+      </Label>
+      <Label layoutX="11.0" layoutY="183.0" text="Contraseña Email" />
+      <PasswordField fx:id="repetirContraseña" layoutX="165.0" layoutY="323.0">
+         <tooltip>
+            <Tooltip text="campo obligatorio" />
+         </tooltip>
+      </PasswordField>
+   </children>
+</AnchorPane>

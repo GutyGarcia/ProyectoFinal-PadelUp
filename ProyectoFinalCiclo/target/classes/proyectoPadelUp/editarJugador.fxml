@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="altaJugador" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="517.0" styleClass="fondo" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectoPadelUp.controladores.ControladorEditarJugador">
+	<children>
+		<Text fx:id="error" fill="RED" layoutX="-3.0" layoutY="517.0" textAlignment="CENTER" wrappingWidth="524.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+		<Label layoutX="14.0" layoutY="46.0" text="Nombre" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="38.0" />
+		
+		<TextField fx:id="textFieldNombre" layoutX="165.0" layoutY="33.0" prefHeight="31.0" prefWidth="218.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="33.0">
+			<tooltip>
+				<Tooltip text="campo obligatorio" />
+			</tooltip>
+		</TextField>
+		
+		<Label layoutX="13.0" layoutY="96.0" text="Primer apellido" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="84.0" />
+		
+		<TextField fx:id="textFieldApellido1" layoutX="214.0" layoutY="91.0" prefHeight="31.0" prefWidth="218.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="79.0">
+			<tooltip>
+				<Tooltip text="campo obligatorio" />
+			</tooltip>
+		</TextField>
+		
+		<Label layoutX="12.0" layoutY="147.0" text="Segundo Apellido" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="130.0" />
+		
+		<TextField fx:id="textFieldApellido2" layoutX="214.0" layoutY="142.0" prefHeight="31.0" prefWidth="218.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="125.0" />
+		
+		<Label layoutX="14.0" layoutY="253.0" text="Apodo" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="176.0" />
+		
+		<TextField fx:id="textFieldApodo" layoutX="214.0" layoutY="248.0" prefHeight="31.0" prefWidth="218.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="171.0" />
+		
+		<Label layoutX="12.0" layoutY="303.0" text="Teléfono" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="364.0" />
+		
+		<TextField fx:id="textFieldTelefono" layoutX="187.0" layoutY="245.0" prefHeight="31.0" prefWidth="218.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="355.0" />
+		
+		<Label layoutX="15.0" layoutY="347.0" text="Correo electrónico" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="314.0" />
+		
+      	<TextField fx:id="textFieldEmail" layoutX="214.0" layoutY="342.0" prefHeight="31.0" prefWidth="218.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="309.0">
+         	<tooltip>
+            	<Tooltip text="campo obligatorio" />
+        	 </tooltip>
+      	</TextField>
+      	
+		<Label layoutX="14.0" layoutY="402.0" text="Posición" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="268.0" />
+		<ComboBox fx:id="comboBoxPosicion" layoutX="187.0" layoutY="290.0" prefHeight="31.0" prefWidth="218.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="263.0">
+			<items>
+				<FXCollections fx:factory="observableArrayList">
+					<String fx:value="Derecha" />
+					<String fx:value="Revés" />
+					<String fx:value="Ambas" />
+				</FXCollections>
+			</items>
+			<tooltip>
+				<Tooltip text="campo obligatorio" />
+			</tooltip>
+		</ComboBox>
+		<Label layoutX="18.0" layoutY="365.0" text="Puntos" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="410.0" />
+		<TextField fx:id="textFieldPuntos" layoutX="214.0" layoutY="298.0" prefHeight="31.0" prefWidth="218.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="405.0">
+			<tooltip>
+				<Tooltip text="campo numérico obligatorio" />
+			</tooltip>
+		</TextField>
+		<Label layoutX="8.0" layoutY="198.0" text="Fecha de nacimiento" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="222.0" />
+		<DatePicker fx:id="fechaNacimiento" layoutX="214.0" layoutY="193.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="217.0">
+			<tooltip>
+				<Tooltip text="campo obligatorio" />
+			</tooltip>
+		</DatePicker>
+      	
+      	<Label layoutX="64.0" layoutY="243.0" text="*" textFill="#db1212" AnchorPane.leftAnchor="134.0" AnchorPane.topAnchor="310.0" />
+		<Label layoutX="68.0" layoutY="28.0" text="*" textFill="#db1212" AnchorPane.leftAnchor="67.0" AnchorPane.topAnchor="34.0" />
+		<Label layoutX="113.0" layoutY="92.0" text="*" textFill="#db1212" AnchorPane.leftAnchor="112.0" AnchorPane.topAnchor="81.0" />
+		<Label layoutX="57.0" layoutY="402.0" text="*" textFill="#db1212" AnchorPane.leftAnchor="67.0" AnchorPane.topAnchor="264.0" />
+		<Label layoutX="67.0" layoutY="407.0" text="*" textFill="#db1212" AnchorPane.leftAnchor="58.0" AnchorPane.topAnchor="407.0" />
+		<Label layoutX="150.0" layoutY="194.0" text="*" textFill="#db1212" AnchorPane.leftAnchor="148.0" AnchorPane.topAnchor="219.0" />
+		<Button fx:id="botonAceptar" layoutX="194.0" layoutY="447.0" mnemonicParsing="false" onAction="#botonAceptar" prefHeight="40.0" prefWidth="65.0" styleClass="fondo3" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="188.0">
+			<graphic>
+				<ImageView fitHeight="31.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../imagenes/aceptar.png" />
+					</image>
+				</ImageView>
+			</graphic>
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<tooltip>
+				<Tooltip text="Aceptar" />
+			</tooltip>
+		</Button>
+		<Button fx:id="botonCancelar" layoutX="274.0" layoutY="447.0" mnemonicParsing="false" onAction="#botonCancelar" prefHeight="40.0" prefWidth="65.0" styleClass="fondo3" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="188.0">
+			<graphic>
+				<ImageView fitHeight="31.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../imagenes/cancelar.png" />
+					</image>
+				</ImageView>
+			</graphic>
+			<tooltip>
+				<Tooltip text="Cancelar" />
+			</tooltip>
+		</Button>
+      <Label layoutX="10.0" layoutY="460.0" text="Número de licencia" AnchorPane.leftAnchor="13.0" />
+      <Label layoutX="145.0" layoutY="442.0" text="*" textFill="#db1212" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="456.0" />
+      <TextField fx:id="textFieldLicencia" layoutX="214.0" layoutY="448.0" prefHeight="31.0" prefWidth="218.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="455.0">
+         <tooltip>
+            <Tooltip text="campo numérico obligatorio" />
+         </tooltip>
+      </TextField>
+	</children>
+</AnchorPane>

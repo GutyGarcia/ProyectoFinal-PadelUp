@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<VBox id="principal" alignment="CENTER_LEFT" prefHeight="705.0" prefWidth="711.0" spacing="20" styleClass="fondo" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectoPadelUp.controladores.ControladorEquipos">
+	
+	<padding>
+		<Insets bottom="10" left="10" right="10" top="10" />
+	</padding>
+	<children>
+	
+	  
+      <ImageView fitHeight="121.0" fitWidth="141.0">
+         <image>
+            <Image url="@../imagenes/logoAzul.PNG" />
+         </image>
+         <VBox.margin>
+            <Insets left="550.0" />
+         </VBox.margin>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+
+				<GridPane hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="653.0" vgap="10">
+
+			<padding>
+				<Insets bottom="10.0" left="10.0" right="10.0" />
+			</padding>
+			<children>
+            <ComboBox fx:id="comboEquipos" prefHeight="31.0" prefWidth="214.0" GridPane.columnIndex="2" GridPane.columnSpan="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </ComboBox>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#pantallaAltaEquipo" prefHeight="53.0" prefWidth="35.0" styleClass="fondo3" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/anadirEquipo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Registrar Equipo" />
+               </tooltip>
+               <GridPane.margin>
+                  <Insets left="220.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="bajaEquipo" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#bajaEquipo" prefHeight="53.0" prefWidth="35.0" styleClass="fondo3" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/eliminarEquipo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets left="275.0" />
+               </GridPane.margin>
+               <tooltip>
+                  <Tooltip text="Baja Equipo" />
+               </tooltip>
+            </Button>
+            <Button fx:id="editarEquipo" mnemonicParsing="false" onAction="#editarEquipo" prefHeight="53.0" prefWidth="35.0" styleClass="fondo3" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/lapiz2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets left="330.0" />
+               </GridPane.margin>
+               <tooltip>
+                  <Tooltip text="Editar equipo" />
+               </tooltip>
+            </Button>
+            <Button fx:id="consultarJugadores" mnemonicParsing="false" onAction="#consultarJugadores" prefHeight="53.0" prefWidth="35.0" styleClass="fondo3">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/busqueda.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Consultar Jugadores" />
+               </tooltip>
+               <GridPane.margin>
+                  <Insets left="477.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="consultarEquipos" mnemonicParsing="false" onAction="#consultarEquipos" prefHeight="31.0" prefWidth="80.0" styleClass="fondo3" text="Equipos" textFill="WHITE" GridPane.columnSpan="2147483647">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="consultar" />
+               </tooltip>
+            </Button>
+			</children>
+			<columnConstraints>
+				<ColumnConstraints maxWidth="465.0" minWidth="36.0" prefWidth="102.0" />
+				<ColumnConstraints maxWidth="465.0" minWidth="0.0" prefWidth="0.0" />
+            <ColumnConstraints maxWidth="465.0" minWidth="36.0" prefWidth="144.0" />
+            <ColumnConstraints maxWidth="623.0" minWidth="194.0" prefWidth="445.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints />
+				<RowConstraints />
+				<RowConstraints />
+            <RowConstraints />
+			</rowConstraints>
+         <VBox.margin>
+            <Insets top="-80.0" />
+         </VBox.margin>
+		</GridPane>
+
+		<StackPane HBox.hgrow="ALWAYS">
+			<children>
+				<TableView fx:id="tablaJugadores" prefHeight="490.0" prefWidth="689.0" styleClass="fondo2">
+					<columns>
+						<TableColumn fx:id="columnaNombre" prefWidth="150.0" text="Nombre">
+							<cellValueFactory>
+								<PropertyValueFactory property="Nombre" />
+							</cellValueFactory>
+						</TableColumn>
+						<TableColumn fx:id="columnaApellido" prefWidth="150.0" text="Apellido">
+							<cellValueFactory>
+								<PropertyValueFactory property="primerApellido" />
+							</cellValueFactory>
+						</TableColumn>
+						<TableColumn fx:id="columnaApodo" minWidth="9.0" prefWidth="150.0" text="Apodo">
+							<cellValueFactory>
+								<PropertyValueFactory property="Apodo" />
+							</cellValueFactory>
+						</TableColumn>
+                  <TableColumn fx:id="columnaPosicion" prefWidth="110.0" text="Posición">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="Posicion" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="columnaPuntos" prefWidth="118.0" text="Puntos">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="Puntos" />
+                     </cellValueFactory>
+                  </TableColumn>
+					</columns>
+				</TableView>
+			</children>
+		</StackPane>
+      <Pane prefHeight="92.0" prefWidth="681.0">
+         <children>
+            <Button fx:id="altaJugador" layoutX="227.0" layoutY="-6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#pantallaAltaJugador" prefHeight="70.0" prefWidth="70.0" styleClass="fondo3">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="64.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/altaJugador.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Alta Jugador" />
+               </tooltip>
+               <padding>
+                  <Insets left="7.0" />
+               </padding>
+            </Button>
+            <Button fx:id="bajaJugador" layoutX="310.0" layoutY="-6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#bajaJugador" prefHeight="70.0" prefWidth="70.0" styleClass="fondo3">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="64.0" preserveRatio="true" styleClass="fondo3">
+                     <image>
+                        <Image url="@../imagenes/bajaJugador.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="8.0" />
+               </padding>
+               <tooltip>
+                  <Tooltip text="Baja Jugador" />
+               </tooltip>
+          </Button>
+          <Button fx:id="editarJugador" layoutX="393.0" layoutY="-6.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#editarJugador" prefHeight="70.0" prefWidth="70.0" styleClass="fondo3">
+	         <graphic>
+      	            <ImageView fitHeight="63.0" fitWidth="64.0" preserveRatio="true" styleClass="fondo3">
+      	               <image>
+      	                  <Image url="@../imagenes/lapiz.png" />
+      	               </image>
+      	            </ImageView>
+	         </graphic>
+	         <padding>
+	            <Insets left="9.0" />
+	         </padding>
+	         <tooltip>
+	            <Tooltip text="Editar Jugador" />
+	         </tooltip>
+      	</Button>
+         </children>
+      </Pane>
+	</children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</VBox>

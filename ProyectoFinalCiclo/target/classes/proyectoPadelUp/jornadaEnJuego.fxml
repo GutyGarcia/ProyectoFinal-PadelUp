@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.media.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<VBox prefHeight="681.0" prefWidth="894.0" styleClass="fondo" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectoPadelUp.controladores.ControladorJornadaEnJuego">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="titulo" strokeType="OUTSIDE" strokeWidth="0.0" text="xxxxxxxxxxxxxxxxxxxxx" textAlignment="CENTER" wrappingWidth="893.44873046875">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <GridPane prefHeight="610.0" prefWidth="894.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="714.0" minWidth="10.0" prefWidth="713.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="442.0" minWidth="10.0" prefWidth="181.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="112.0" minHeight="10.0" prefHeight="112.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="302.0" minHeight="0.0" prefHeight="270.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="226.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="105.0" prefWidth="854.0" styleClass="fondo2">
+               <children>
+                  <Text layoutX="57.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jornada">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="231.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="400.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equipo Local">
+                  	<font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="620.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equipo Visitante">
+                  <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="numeroJornada" layoutX="57.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" textAlignment="CENTER" wrappingWidth="90.1171875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="fecha" layoutX="181.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="26-12-1981" textAlignment="CENTER" wrappingWidth="164.34375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="equipoLocal" layoutX="359.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;A&quot; CLUB DEPORTIVO PADEL RIVEIRA 2020" textAlignment="CENTER" wrappingWidth="224.453125">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="equipoVisitante" layoutX="600.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;A&quot; CLUB DEPORTIVO PADEL RIVEIRA 2020" textAlignment="CENTER" wrappingWidth="224.453125">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+               <GridPane.margin>
+                  <Insets left="20.0" top="30.0" />
+               </GridPane.margin>
+            </AnchorPane>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="693.0" styleClass="fondo2" GridPane.rowIndex="1">
+               <children>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="696.0">
+                     <children>
+                        <Text layoutX="399.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1º Set" textAlignment="CENTER" wrappingWidth="52.34765625" AnchorPane.topAnchor="3.5">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Separator layoutX="11.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="7.0" prefWidth="680.0" AnchorPane.leftAnchor="5.0" />
+                        <Text layoutX="481.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2º Set" textAlignment="CENTER" wrappingWidth="52.34765625" AnchorPane.topAnchor="3.5">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="561.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3º Set" textAlignment="CENTER" wrappingWidth="52.34765625" AnchorPane.rightAnchor="82.65234375" AnchorPane.topAnchor="3.5">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="221.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jugador" textAlignment="CENTER" wrappingWidth="164.34375" AnchorPane.leftAnchor="221.0" AnchorPane.topAnchor="3.5">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="-6.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pareja" textAlignment="CENTER" wrappingWidth="64.34765625" AnchorPane.leftAnchor="-6.0" AnchorPane.topAnchor="3.5">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="50.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jugador" textAlignment="CENTER" wrappingWidth="164.34375" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="3.5">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="607.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G" textAlignment="CENTER" wrappingWidth="22.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="3.5">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="640.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P" textAlignment="CENTER" wrappingWidth="22.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="3.5">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-1.0" layoutY="38.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="696.0" AnchorPane.leftAnchor="-1.0" AnchorPane.topAnchor="38.0">
+                     <children>
+                        
+                      	<Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" wrappingWidth="41.0859375" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="jugador1" layoutX="53.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" textAlignment="CENTER" wrappingWidth="164.34375" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="0.0" />
+                        <Text fx:id="jugador2" layoutX="202.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" textAlignment="CENTER" wrappingWidth="164.34375" AnchorPane.leftAnchor="221.0" AnchorPane.topAnchor="0.0" />
+                        <Separator layoutX="14.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="7.0" prefWidth="680.0" AnchorPane.leftAnchor="5.0" />
+                        <TextField fx:id="pareja1Set1A" layoutX="395.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="270.0" />
+                        <TextField fx:id="pareja1Set1B" layoutX="430.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="240.0" />
+                        <TextField fx:id="pareja1Set2A" layoutX="480.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="190.0" />
+                        <TextField fx:id="pareja1Set2B" layoutX="508.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="160.0" />
+                        <TextField fx:id="pareja1Set3A" layoutX="561.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="110.0" />
+                        <TextField fx:id="pareja1Set3B" layoutX="589.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="80.0" />
+                        <CheckBox fx:id="pareja1CheckG" layoutX="608.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="2.0" />
+                        <CheckBox fx:id="pareja1CheckP" layoutX="639.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="696.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="76.0">
+                     <children>
+                        
+                        
+                        <Text fx:id="jugador3" layoutX="50.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" textAlignment="CENTER" wrappingWidth="164.34375" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="-0.1865234375" />
+                        <Text fx:id="jugador4" layoutX="202.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" textAlignment="CENTER" wrappingWidth="164.34375" AnchorPane.leftAnchor="221.0" AnchorPane.topAnchor="0.0" />
+                        <Separator layoutX="8.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="7.0" prefWidth="680.0" AnchorPane.bottomAnchor="2.0" />
+                        <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" wrappingWidth="41.0859375" AnchorPane.topAnchor="2.0" />
+                        <TextField fx:id="pareja2Set1A" layoutX="395.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="270.0" />
+                        <TextField fx:id="pareja2Set1B" layoutX="431.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="240.0" />
+                        <TextField fx:id="pareja2Set2A" layoutX="480.0" layoutY="-3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="190.0" />
+                        <TextField fx:id="pareja2Set2B" layoutX="508.0" layoutY="-3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="160.0" />
+                        <TextField fx:id="pareja2Set3A" layoutX="558.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="-2.0" />
+                        <TextField fx:id="pareja2Set3B" layoutX="586.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="-2.0" />
+                        <CheckBox fx:id="pareja2CheckG" layoutX="607.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="2.0" />
+                        <CheckBox fx:id="pareja2CheckP" layoutX="640.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="2.0" layoutY="114.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="696.0" AnchorPane.leftAnchor="0.0">
+                     <children>                        
+                        <Text fx:id="jugador5" layoutX="54.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" textAlignment="CENTER" wrappingWidth="164.34375" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="0.0" />
+                        <Text fx:id="jugador6" layoutX="202.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" textAlignment="CENTER" wrappingWidth="164.34375" AnchorPane.leftAnchor="221.0" AnchorPane.topAnchor="0.0" />
+                        <Separator layoutX="14.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="7.0" prefWidth="680.0" AnchorPane.leftAnchor="5.0" />                       
+                        <Text layoutX="3.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" wrappingWidth="41.0859375" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="2.0" />
+                        <TextField fx:id="pareja3Set1A" layoutX="395.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="270.0" />
+                        <TextField fx:id="pareja3Set1B" layoutX="431.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="240.0" />
+                        <TextField fx:id="pareja3Set2A" layoutX="478.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="190.0" />
+                        <TextField fx:id="pareja3Set2B" layoutX="506.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="160.0" />
+                        <TextField fx:id="pareja3Set3A" layoutX="556.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="-2.0" />
+                        <TextField fx:id="pareja3Set3B" layoutX="584.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="-2.0" />
+                        <CheckBox fx:id="pareja3CheckG" layoutX="608.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="2.0" />
+                        <CheckBox fx:id="pareja3CheckP" layoutX="647.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="2.0" layoutY="152.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="696.0" AnchorPane.leftAnchor="0.0">
+                     <children>                       
+                        <Text fx:id="jugador7" layoutX="54.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" textAlignment="CENTER" wrappingWidth="164.34375" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="0.0" />
+                        <Text fx:id="jugador8" layoutX="202.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" textAlignment="CENTER" wrappingWidth="164.34375" AnchorPane.leftAnchor="221.0" AnchorPane.topAnchor="0.0" />
+                        <Separator layoutX="14.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="7.0" prefWidth="680.0" AnchorPane.leftAnchor="5.0" />                        
+                        <Text layoutX="-1.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="CENTER" wrappingWidth="41.0859375" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="2.0" />
+                        <TextField fx:id="pareja4Set1A" layoutX="397.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="-2.0" />
+                        <TextField fx:id="pareja4Set1B" layoutX="433.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="240.0" AnchorPane.topAnchor="-2.0" />
+                        <TextField fx:id="pareja4Set2A" layoutX="476.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="-2.0" />
+                        <TextField fx:id="pareja4Set2B" layoutX="510.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="-2.0" />
+                        <TextField fx:id="pareja4Set3A" layoutX="553.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="-2.0" />                        
+                        <TextField fx:id="pareja4Set3B" layoutX="587.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="-2.0" />
+                        <CheckBox fx:id="pareja4CheckG" layoutX="607.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="2.0" />
+                        <CheckBox fx:id="pareja4CheckP" layoutX="651.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" AnchorPane.rightAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="2.0" layoutY="190.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="696.0" AnchorPane.leftAnchor="0.0">
+                     <children>                        
+                        <Text layoutX="22.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="41.0859375" AnchorPane.topAnchor="0.0" />
+                        <Text fx:id="jugador9" layoutX="54.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" textAlignment="CENTER" wrappingWidth="164.34375" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="0.0" />
+                        <Text fx:id="jugador10" layoutX="202.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" textAlignment="CENTER" wrappingWidth="164.34375" AnchorPane.leftAnchor="221.0" AnchorPane.topAnchor="0.0" />
+                        <Separator layoutX="14.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="7.0" prefWidth="680.0" AnchorPane.leftAnchor="5.0" />                      
+                        <Text layoutX="2.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER" wrappingWidth="41.0859375" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="2.0" />
+                        <TextField fx:id="pareja5Set1A" layoutX="397.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="-2.0" />
+                        <TextField fx:id="pareja5Set1B" layoutX="433.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="240.0" AnchorPane.topAnchor="-2.0" />
+                        <TextField fx:id="pareja5Set2A" layoutX="477.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="-2.0" />
+                        <TextField fx:id="pareja5Set2B" layoutX="512.0" layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="-2.0" />
+                        <TextField fx:id="pareja5Set3A" layoutX="553.0" layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="-2.0" />
+                        <TextField fx:id="pareja5Set3B" layoutX="589.0" layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="28.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="-2.0" />
+                        <CheckBox fx:id="pareja5CheckG" layoutX="608.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" AnchorPane.rightAnchor="40.0" />
+                        <CheckBox fx:id="pareja5CheckP" layoutX="658.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="21.0" prefWidth="22.0" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </AnchorPane>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="182.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="alineacionManual" layoutX="18.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#alineacionManual" prefHeight="31.0" prefWidth="152.0" styleClass="fondo3" text="Alineación Manual" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="resultado" layoutX="18.0" layoutY="142.0" mnemonicParsing="false" onAction="#generarResultado" prefHeight="31.0" prefWidth="152.0" styleClass="fondo3" text="Resultado" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="142.0">
+                  	<font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="borrar" layoutX="18.0" layoutY="185.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#borrar" prefHeight="31.0" prefWidth="152.0" styleClass="fondo3" text="Borrar" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="185.0">
+                  	<font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="comunicar" layoutX="14.0" layoutY="55.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#comunicar" prefHeight="31.0" prefWidth="152.0" styleClass="fondo3" text="Comunicar " textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="55.0">
+                  	<font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="crearActa" layoutX="18.0" layoutY="98.0" mnemonicParsing="false" onAction="#crearActa" prefHeight="31.0" prefWidth="152.0" styleClass="fondo3" text="Crear Acta" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="98.0">
+                  	<font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="-Infinity" prefHeight="175.0" prefWidth="693.0" styleClass="fondo2" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets left="20.0" />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="20.0" top="-33.0" />
+               </GridPane.margin>
+               <children>
+                  <GridPane layoutX="14.0" layoutY="92.0" prefHeight="92.0" prefWidth="344.0" AnchorPane.leftAnchor="0.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="110.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="131.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="78.0" minHeight="2.0" prefHeight="22.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="83.0" minHeight="7.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Juego Ganados" textAlignment="CENTER" wrappingWidth="115.44775390625" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sets Ganados" textAlignment="CENTER" wrappingWidth="103.44775390625" GridPane.columnIndex="1" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Partidos Ganados" textAlignment="CENTER" wrappingWidth="131.44775390625" GridPane.columnIndex="2" />
+                        <Text fx:id="juegosGanadosLocal" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="114.6708984375" GridPane.rowIndex="1" />
+                        <Text fx:id="setsGanadosLocal" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="105.6708984375" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Text fx:id="partidosGanadosLocal" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="131.6708984375" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="350.0" layoutY="89.0" prefHeight="92.0" prefWidth="344.0" AnchorPane.leftAnchor="350.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="110.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="131.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="78.0" minHeight="2.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="83.0" minHeight="7.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Juego Ganados" textAlignment="CENTER" wrappingWidth="115.44775390625">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sets Ganados" textAlignment="CENTER" wrappingWidth="103.44775390625" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets top="2.0" />
+                           </GridPane.margin></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Partidos Ganados" textAlignment="CENTER" wrappingWidth="122.44775390625" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets top="2.0" />
+                           </GridPane.margin></Text>
+                        <Text fx:id="juegosGanadosVisitante" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="114.6708984375" GridPane.rowIndex="1" />
+                        <Text fx:id="setsGanadosVisitante" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="105.6708984375" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Text fx:id="partidosGanadosVisitante" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="131.6708984375" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+                  <Separator layoutX="340.0" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="170.0" prefWidth="13.0" AnchorPane.bottomAnchor="2.0" />
+                  <Separator layoutY="85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="7.0" prefWidth="350.0" AnchorPane.topAnchor="84.0" />
+                  <Text fx:id="equipoLocalGrande" layoutX="3.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;A&quot; CLUB DEPORTIVO PADEL RIVEIRA 2020" textAlignment="CENTER" wrappingWidth="344.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="equipoVisitanteGrande" layoutX="353.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;A&quot; CLUB DEPORTIVO PADEL RIVEIRA 2020" textAlignment="CENTER" wrappingWidth="344.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="340.0" layoutY="84.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="7.0" prefWidth="350.0" AnchorPane.topAnchor="84.0" />
+               </children>
+            </AnchorPane>
+            <Label />
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="182.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="20.0" top="-34.0" />
+               </GridPane.margin>
+               <children>
+                  <Button fx:id="guardarJornada" layoutX="11.0" layoutY="34.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#guardarJornada" prefHeight="31.0" prefWidth="152.0" styleClass="fondo3" text="Cerrar Jornada" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="34.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="volver" layoutX="11.0" layoutY="108.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#volver" prefHeight="31.0" prefWidth="152.0" styleClass="fondo3" text="Volver" textFill="WHITE" AnchorPane.bottomAnchor="34.0" AnchorPane.rightAnchor="20.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

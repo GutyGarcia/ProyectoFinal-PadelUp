@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="editarUsuario" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="307.0" prefWidth="379.0" styleClass="fondo" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectoPadelUp.controladores.ControladorEditarCapitan">
+  <children>
+   	<Text fx:id="error" fill="RED" layoutX="-5.0" layoutY="376.0" textAlignment="CENTER" wrappingWidth="403.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+      <Label layoutX="13.0" layoutY="38.0" text="Nombre" />
+      <TextField fx:id="nombre" layoutX="165.0" layoutY="33.0">
+         <tooltip>
+            <Tooltip text="campo obligatorio" />
+         </tooltip>
+      </TextField>
+      <Label layoutX="11.0" layoutY="87.0" text="Primer apellido" />
+      <TextField fx:id="apellido1" layoutX="165.0" layoutY="82.0">
+         <tooltip>
+            <Tooltip text="campo obligatorio" />
+         </tooltip>
+      </TextField>
+      <Label layoutX="12.0" layoutY="182.0" text="Nombre usuario" />
+      <TextField fx:id="email" layoutX="165.0" layoutY="130.0">
+      	<tooltip>
+            <Tooltip text="Campo no editable" />
+         </tooltip>
+      </TextField>
+      <Label layoutX="11.0" layoutY="135.0" text="Email" />
+      <TextField fx:id="nombreUsuario" layoutX="165.0" layoutY="177.0">
+         <tooltip>
+            <Tooltip text="campo obligatorio" />
+         </tooltip>
+      </TextField>
+      <Button fx:id="BotonAceptar" layoutX="80.0" layoutY="239.0" mnemonicParsing="false" onAction="#botonAceptar" prefHeight="39.0" prefWidth="65.0" styleClass="fondo3">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/aceptar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <tooltip>
+            <Tooltip text="Aceptar" />
+         </tooltip>
+      </Button>
+      <Button fx:id="BotonCancelar" layoutX="234.0" layoutY="239.0" mnemonicParsing="false" onAction="#botonCancelar" prefHeight="39.0" prefWidth="65.0" styleClass="fondo3">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/cancelar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Cancelar" />
+         </tooltip>
+      </Button>
+      <Button fx:id="eliminarCapitan" layoutX="157.0" layoutY="239.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#eliminarCapitan" prefHeight="41.0" prefWidth="65.0" styleClass="fondo3">
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="44.0" preserveRatio="true" styleClass="fondo3">
+               <image>
+                  <Image url="@../imagenes/bajaJugador.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+         <tooltip>
+            <Tooltip text="Eliminar Capitán" />
+         </tooltip>
+      </Button>
+   </children>
+</AnchorPane>

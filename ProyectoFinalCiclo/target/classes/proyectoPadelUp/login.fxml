@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="550.0" styleClass="fondo" stylesheets="@../estilos/estilos.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="proyectoPadelUp.controladores.ControladorPantallaLogin">
+   <children>
+   	
+   	<Text fx:id="error" fill="RED" layoutX="183.0" layoutY="81.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+   
+      <Text layoutX="154.0" layoutY="107.0" text="Nombre de usuario:" AnchorPane.leftAnchor="148.0" AnchorPane.topAnchor="108.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nombreUsuario" layoutX="165.0" layoutY="33.0" prefHeight="35.0" prefWidth="248.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+         <tooltip>
+            <Tooltip text="campo obligatorio" />
+         </tooltip>
+      </TextField>
+      <Text layoutX="154.0" layoutY="162.0" text="Password:" AnchorPane.leftAnchor="148.0" AnchorPane.topAnchor="163.0">
+      		<font>
+           		<Font name="System Bold" size="15.0" />
+         	</font>
+      </Text>
+      <PasswordField fx:id="password" layoutX="165.0" layoutY="90.0" prefHeight="35.0" prefWidth="248.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="155.0">
+         <tooltip>
+            <Tooltip text="campo obligatorio" />
+         </tooltip>
+      </PasswordField>
+      
+      <Button layoutX="292.0" layoutY="241.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="140.0" styleClass="fondo3" text="Iniciar sesion" textFill="WHITE" AnchorPane.bottomAnchor="55.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <tooltip>
+            <Tooltip text="Iniciar sesion" />
+         </tooltip>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="260.0" layoutY="135.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="35.0" prefWidth="90.0" styleClass="fondo3" text="Cancelar" textFill="WHITE" AnchorPane.bottomAnchor="55.0" AnchorPane.rightAnchor="10.0">
+         <tooltip>
+            <Tooltip text="Cancelar" />
+         </tooltip>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="550.0" styleClass="fondo3" AnchorPane.leftAnchor="0.0">
+         <left>
+            <Label prefHeight="53.0" prefWidth="150.0" text="Registro" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets left="20.0" />
+               </BorderPane.margin>
+            </Label>
+         </left>
+      </BorderPane>
+      <ImageView fitHeight="144.0" fitWidth="131.0" layoutX="14.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/login.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="297.0" layoutY="255.0" mnemonicParsing="false" onAction="#mostrarPantallaAltaUsuario" prefHeight="35.0" prefWidth="248.0" styleClass="fondo3" text="Registrar nuevo usuario" textFill="WHITE" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

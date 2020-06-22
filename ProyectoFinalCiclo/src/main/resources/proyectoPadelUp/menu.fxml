@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.web.WebView?>
+
+<MenuBar xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="proyectoPadelUp.controladores.ControladorMenu">
+	
+	<menus>
+		<Menu text="Inicio">
+			<items>
+				<MenuItem onAction="#mostrarPantallaPrincipal" text="Pantalla principal" />
+				<MenuItem onAction="#mostrarPerfil" text="Datos del usuario" />
+				<MenuItem onAction="#logOut" text="Cambiar usuario" />
+				<MenuItem onAction="#salir" text="Salir" />
+			</items>
+		</Menu>
+		
+		<Menu text="Competición">
+			<items>
+				<Menu mnemonicParsing="false" text="Federación">
+					<items>
+	                	<MenuItem mnemonicParsing="false" onAction="#mostrarPantallaFederacion" text="Web"/>
+	                	<MenuItem mnemonicParsing="false" onAction="#mostrarPantallaClasificacion" text="Clasificación" />
+	                	<MenuItem mnemonicParsing="false" onAction="#mostrarPantallaDocumentos" text="Documentos y Sanciones" />
+	              	</items>
+	            </Menu>
+	            <MenuItem mnemonicParsing="false" onAction="#crearTemporada" text="Crear temporada" />
+				<Menu mnemonicParsing="false" text="Jornadas">
+	              	<items>
+		                <MenuItem mnemonicParsing="false" onAction="#mostrarPantallaAltaJornadas" text="Alta" />
+		                <MenuItem mnemonicParsing="false" onAction="#mostrarPantallaJornadaEnJuego" text="En juego" />
+	              	</items>
+            	</Menu>				
+				<MenuItem onAction="#mostrarPantallaRivales" text="Rivales" />
+			</items>
+			
+		</Menu>
+	</menus>
+</MenuBar>

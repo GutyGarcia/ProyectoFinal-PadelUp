@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="PantallaAltaEquipo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="390.0" styleClass="fondo" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectoPadelUp.controladores.ControladorEditarEquipo">
+	<children>
+		<Label layoutX="28.0" layoutY="41.0" text="Nombre" AnchorPane.leftAnchor="14.0" />
+		<Label layoutX="21.0" layoutY="83.0" text="Club" AnchorPane.leftAnchor="14.0" />
+		<Label layoutX="16.0" layoutY="129.0" text="Dirección" AnchorPane.leftAnchor="14.0" />
+		<Label layoutX="21.0" layoutY="173.0" text="Teléfono" AnchorPane.leftAnchor="14.0" />
+		<Label layoutX="11.0" layoutY="218.0" text="Categoria" AnchorPane.leftAnchor="14.0" />
+		<TextField fx:id="nombre" editable="false" layoutX="106.0" layoutY="36.0" prefHeight="31.0" prefWidth="265.0">
+			<tooltip>
+				<Tooltip text="campo obligatorio" />
+			</tooltip>
+		</TextField>
+		<TextField fx:id="club" layoutX="106.0" layoutY="78.0" prefHeight="31.0" prefWidth="265.0" />
+		<TextField fx:id="categoria" editable="false" layoutX="106.0" layoutY="213.0" prefHeight="31.0" prefWidth="265.0">
+			<tooltip>
+				<Tooltip text="campo obligatorio" />
+			</tooltip>
+		</TextField>
+		<TextField fx:id="direccion" layoutX="106.0" layoutY="124.0" prefHeight="31.0" prefWidth="265.0" />
+		<TextField fx:id="telefono" layoutX="106.0" layoutY="168.0" prefHeight="31.0" prefWidth="265.0" />
+		<Button id="botonCancelar" layoutX="181.0" layoutY="263.0" mnemonicParsing="false" onAction="#botonCancelar" prefHeight="39.0" prefWidth="65.0" styleClass="fondo3" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="125.0">
+			<graphic>
+				<ImageView fitHeight="31.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../imagenes/cancelar.png" />
+					</image>
+				</ImageView>
+			</graphic>
+			<tooltip>
+				<Tooltip text="Cancelar" />
+			</tooltip>
+		</Button>
+		<Button id="botonAceptar" layoutX="95.0" layoutY="263.0" mnemonicParsing="false" onAction="#botonAceptar" prefHeight="39.0" prefWidth="65.0" styleClass="fondo3" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="125.0">
+			<graphic>
+				<ImageView fitHeight="31.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../imagenes/aceptar.png" />
+					</image>
+				</ImageView>
+			</graphic>
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+		</Button>
+		<Label layoutX="69.0" layoutY="41.0" text="*" textFill="RED" AnchorPane.leftAnchor="69.0" AnchorPane.topAnchor="38.0" />
+		<Label layoutX="78.0" layoutY="215.0" prefHeight="21.0" prefWidth="17.0" text="*" textFill="RED" AnchorPane.leftAnchor="78.0" />
+      <Label layoutX="15.0" layoutY="263.0" text="División" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="263.0" />
+      <TextField fx:id="division" editable="false" layoutX="106.0" layoutY="258.0" prefHeight="31.0" prefWidth="265.0" />
+      <Label layoutX="12.0" layoutY="306.0" text="Grupo" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="308.0" />
+      <TextField fx:id="grupo" editable="false" layoutX="106.0" layoutY="303.0" prefHeight="31.0" prefWidth="265.0" />
+	</children>
+</AnchorPane>
